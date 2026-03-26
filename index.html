@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skautství v České Republice</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background-color: #34495e;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #f39c12;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            margin: 2rem 0;
+            padding: 2rem;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #2c3e50;
+        }
+
+        section h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+
+        section p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        .values {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .value-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-top: 4px solid #e74c3c;
+        }
+
+        .value-card h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        .logo-section {
+            text-align: center;
+            font-size: 3rem;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Skautství v České Republice</h1>
+        <p>Junák - svaz skautů a skautek ČR</p>
+    </header>
+
+    <nav>
+        <a href="#about">O nás</a>
+        <a href="#what-is-scouting">Co je skautství</a>
+        <a href="#values">Hodnoty</a>
+        <a href="#activities">Aktivity</a>
+        <a href="#vysocina">Vysočina</a>
+    </nav>
+
+    <div class="container">
+        <section id="about">
+            <h2>O Skautství v České Republice</h2>
+            <p>
+                <strong>Junák - svaz skautů a skautek České republiky</strong> je nezisková organizace, která už více než 100 let vychovává mladé lidi prostřednictvím skautských programů. Skautství je hnutí zaměřené na osobnostní rozvoj dětí a mládeže.
+            </p>
+            <p>
+                Aktuálně má Junák přes 65 000 členů todos školitel věkem od 5 až 30+ let. Skautství se tradičně věnuje účinné přípravě mladých lidí na jejich budoucnost skrze praktické zkušenosti v přírodě a v sociálním prostředí.
+            </p>
+        </section>
+
+        <section id="what-is-scouting">
+            <h2>Co je Skautství?</h2>
+            <p>
+                Skautství je údernationálním hnutí pro mládež, které vychází z praktického učení skrze činnost. Navrhuje dospělí - skautští vůdcové - a podílí se na hnutí v různých věkových skupinách.
+            </p>
+            <p>
+                Skautství pracuje s metodou založenou na:
+            </p>
+            <ul style="margin-left: 2rem; margin-top: 1rem;">
+                <li>Učení skrze činnost a prožitky</li>
+                <li>Malými skupinami vedené zkušenými dospělými</li>
+                <li>Postupným rozvojem dovedností a vědomostí</li>
+                <li>Vzájemnou spoluprací a přátelstvím</li>
+                <li>Bezpečným a zábavným prostředím</li>
+            </ul>
+        </section>
+
+        <section id="values">
+            <h2>Skautské Hodnoty</h2>
+            <div class="values">
+                <div class="value-card">
+                    <h3>Příroda</h3>
+                    <p>Skautství učí udržitelný vztah k přírodě přes kempování, походы a outdoor činnosti.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Přátelství</h3>
+                    <p>Budování vzájemného respektu, spolupráce a přátelství mezi členy různých pozadí.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Osobní Rozvoj</h3>
+                    <p>Rozvoj dovedností, sebevědomí, leadershipu a samostatnosti u každého člena.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Odpovědnost</h3>
+                    <p>Učení k odpovědnosti vůči společnosti a životnímu prostředí.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Tradice</h3>
+                    <p>Dodržování skautských tradic a symbolů s hlediska moderního Understanding.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Výzvy</h3>
+                    <p>Překonávání osobních limit prostřednictvím nových výzev a dobrodružství.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="activities">
+            <h2>Skautské Aktivity</h2>
+            <p>
+                Skautské programy zahrnují pestrý mix aktivit pro všechny věkové skupiny:
+            </p>
+            <ul style="margin-left: 2rem; margin-top: 1rem;">
+                <li><strong>Setkání a schůzky</strong> - pravidelné schůzky v místních skupinách</li>
+                <li><strong>Kempování a tábory</strong> - letní tábory a víkendové kempy v přírodě</li>
+                <li><strong>Výpravy a túry</strong> - poznávací a sportovní vyjížďky</li>
+                <li><strong>Společenské akce</strong> - tábořiště, soutěže a festivaly</li>
+                <li><strong>Dobročinná činnost</strong> - projekty prospěšné pro společnost</li>
+                <li><strong>Vzdělávání</strong> - kurzy a školení v různých dovednostech</li>
+            </ul>
+        </section>
+
+        <section id="vysocina">
+            <h2>Skautství na Vysočině</h2>
+            <p>
+                Vysočina je jedním z důležitých center skautské činnosti v České republice. Krásná přírodní prostředí Vysočiny s jejími lesy, jezery a pahorků poskytují ideální podmínky pro skautské aktivity a outdoor tábory.
+            </p>
+            <p>
+                Na Vysočině pracuje několik desítek skautských oddílů a hlídek, které aktivně vychovávají mladé lidi ve městech jako Žďár nad Sázavou, Jihlava, Havlíčkův Brod a dalších. Zde se pořádají tradiční soutěže, tábory a velké krajské setkání.
+            </p>
+            <p>
+                Charakteristickými místy pro skautské akce na Vysočině jsou:
+            </p>
+            <ul style="margin-left: 2rem; margin-top: 1rem;">
+                <li><strong>Národní park Žďárské vrchy</strong> - oblíbená místa pro trampování a kempy</li>
+                <li><strong>Jezera a rybníky</strong> - zdroj aquatických aktivit a letovisek</li>
+                <li><strong>Místní skautských středisek</strong> - permanentní základny pro oddílové schůzky</li>
+                <li><strong>Tradiční tábořiště</strong> - generace skautů zde trávily nezapomenutelné letní dny</li>
+            </ul>
+            <p>
+                Skautství na Vysočině pokračuje v tradici přípravy mladých lidí na život v souladu s prírodou a společenskou odpovědností.
+            </p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Skautství v České Republice | Junák - svaz skautů a skautek ČR</p>
+        <p>Připraveno s láskou ke skautským tradicím</p>
+    </footer>
+</body>
+</html>

@@ -18,7 +18,7 @@
         }
 
         header {
-            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            background: linear-gradient(135deg, #c41e3a 0%, #8b0000 100%);
             color: white;
             padding: 3rem 2rem;
             text-align: center;
@@ -35,7 +35,7 @@
         }
 
         nav {
-            background-color: #34495e;
+            background-color: #8b0000;
             padding: 1rem;
             text-align: center;
         }
@@ -49,7 +49,7 @@
         }
 
         nav a:hover {
-            color: #f39c12;
+            color: #ffcc00;
         }
 
         .container {
@@ -63,13 +63,46 @@
             padding: 2rem;
             background-color: #f8f9fa;
             border-radius: 8px;
-            border-left: 4px solid #2c3e50;
+            border-left: 4px solid #c41e3a;
         }
 
         section h2 {
-            color: #2c3e50;
+            color: #8b0000;
             margin-bottom: 1rem;
             font-size: 1.8rem;
+        }
+
+        .section-image {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            border: 3px solid #c41e3a;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .gallery-item {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(196, 30, 58, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
         }
 
         section p {
@@ -93,12 +126,12 @@
         }
 
         .value-card h3 {
-            color: #2c3e50;
+            color: #8b0000;
             margin-bottom: 0.5rem;
         }
 
         footer {
-            background-color: #2c3e50;
+            background-color: #8b0000;
             color: white;
             text-align: center;
             padding: 2rem;
@@ -129,6 +162,7 @@
     <div class="container">
         <section id="about">
             <h2>O Skautství v České Republice</h2>
+            <img src="https://images.unsplash.com/photo-1533900820318-6b8da08a523e?w=800&h=300&fit=crop" alt="Skautská skupina v přírodě" class="section-image">
             <p>
                 <strong>Junák - svaz skautů a skautek České republiky</strong> je nezisková organizace, která už více než 100 let vychovává mladé lidi prostřednictvím skautských programů. Skautství je hnutí zaměřené na osobnostní rozvoj dětí a mládeže.
             </p>
@@ -139,6 +173,7 @@
 
         <section id="what-is-scouting">
             <h2>Co je Skautství?</h2>
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=300&fit=crop" alt="Skautství v přírodě" class="section-image">
             <p>
                 Skautství je údernationálním hnutí pro mládež, které vychází z praktického učení skrze činnost. Navrhuje dospělí - skautští vůdcové - a podílí se na hnutí v různých věkových skupinách.
             </p>
@@ -186,13 +221,24 @@
 
         <section id="activities">
             <h2>Skautské Aktivity</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=400&h=250&fit=crop" alt="Kempování">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?w=400&h=250&fit=crop" alt="Skupinové aktivity">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1511967687413-07d7cb4b1d65?w=400&h=250&fit=crop" alt="Táborák">
+                </div>
+            </div>
             <p>
                 Skautské programy zahrnují pestrý mix aktivit pro všechny věkové skupiny:
             </p>
             <ul style="margin-left: 2rem; margin-top: 1rem;">
                 <li><strong>Setkání a schůzky</strong> - pravidelné schůzky v místních skupinách</li>
                 <li><strong>Kempování a tábory</strong> - letní tábory a víkendové kempy v přírodě</li>
-                <li><strong>Výpravy a túry</strong> - poznávací a sportovní vyjížďky</li>
+                <li><strong>Výpravy a túry</strong> - познávací a sportovní vyjížďky</li>
                 <li><strong>Společenské akce</strong> - tábořiště, soutěže a festivaly</li>
                 <li><strong>Dobročinná činnost</strong> - projekty prospěšné pro společnost</li>
                 <li><strong>Vzdělávání</strong> - kurzy a školení v různých dovednostech</li>
@@ -201,6 +247,7 @@
 
         <section id="vysocina">
             <h2>Skautství na Vysočině</h2>
+            <img src="https://images.unsplash.com/photo-1519904981063-b0cf448d479e?w=800&h=300&fit=crop" alt="Hora na Vysočině" class="section-image">
             <p>
                 Vysočina je jedním z důležitých center skautské činnosti v České republice. Krásná přírodní prostředí Vysočiny s jejími lesy, jezery a pahorků poskytují ideální podmínky pro skautské aktivity a outdoor tábory.
             </p>
